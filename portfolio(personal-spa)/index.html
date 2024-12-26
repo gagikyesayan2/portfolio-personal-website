@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();" >Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();" >About</a></li>
+            <li><a href="#services" onclick="toggleMenu();" >Services</a></li>
+            <li><a href="#contact"onclick="toggleMenu();"  >Contact</a></li>
+
+        </ul>
+    </header>
+        <section class="banner" id="home">
+               <div class="textBx">
+                   <h2>Hello, I'm <br><span>Gagik Yesayan.</span></h2>
+                    <h3>I'm a Front End Web Developer.</h3>
+                    <a href="#about" class="btn" >About Me</a>
+               </div>
+        </section>
+        <section class="about" id="about">
+         <div class="heading">
+             <h2>About Me</h2>
+         </div>
+         <div class="content">
+             <div class="contentBx w50">   
+                <h3>I'm a Front End Web Developer.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sed impedit est consequatur debitis, vo
+                    luptatem assumenda repudiandae unde d
+                    olor in obcaecati ab necessitatibus! U
+                    nde facilis sapiente eum, dicta omnis co
+                    rrupti delectus Lorem ipsum dolor sit, amet consectetur adipisi
+                    cing elit. Doloremque culpa, p
+                    rovident iste architecto est in e
+                    os repellat officiis perferendis sit 
+                    sunt totam commodi laudantium quia elig
+                    endi, explicabo iusto. Iste, aut. <br><br> Lorem ipsum, dolor sit amet consectetu
+                    r adipisicing elit. Inventore voluptate
+                    m iusto placeat qui id adipisci aut temp
+                    oribus. Dolore quo libero suscipit conse
+                    quatur ducimus, rerum eaque
+                     ad sint nostrum! Cumque, 
+                     accusamus. </p>
+            </div>
+            <div class="w50">
+                <img src="./assets/images/about.png" class="img">
+            </div>
+         </div>
+        </section>
+        
+        <section class="services" id="services">
+     <div class="heading">
+         <h2>Our Services</h2>
+         <p>error suscipit asha officia quae illo earum.</p>
+     </div>
+    <div class="content">
+        <div class="servicesBx">
+            <img src="./assets/images/icon1.png" alt="">
+               <h2>Web Design</h2>
+               <p>Lorem, ipsum dolor sit amet 
+                sectetur adipisicing elit. Un
+                elaudantium. Molestiae, numquam nesciunt!</p>
+        </div>
+        <div class="servicesBx">
+            <img src="./assets/images/icon2.png" alt="">
+               <h2>Web Development</h2>
+               <p>Lorem, ipsum dolor sit amet 
+                sectetur adipisicing elit. Un
+                elaudantium. Molestiae, numquam nesciunt!</p>
+        </div>
+        <div class="servicesBx">
+            <img src="./assets/images/icon3.png" alt="">
+               <h2>Android App</h2>
+               <p>Lorem, ipsum dolor sit amet 
+                sectetur adipisicing elit. Un
+                elaudantium. Molestiae, numquam nesciunt!</p>
+        </div>
+        <div class="servicesBx">
+            <img src="./assets/images/icon4.png" alt="">
+               <h2>Photography</h2>
+               <p>Lorem, ipsum dolor sit amet 
+                sectetur adipisicing elit. Un
+                elaudantium. Molestiae, numquam nesciunt!</p>
+        </div>
+        <div class="servicesBx">
+            <img src="./assets/images/icon5.png" alt="">
+               <h2>Content Writing</h2>
+               <p>Lorem, ipsum dolor sit amet 
+                sectetur adipisicing elit. Un
+                elaudantium. Molestiae, numquam nesciunt!</p>
+        </div>
+        <div class="servicesBx">
+            <img src="./assets/images/icon6.png" alt="">
+               <h2>Video Editing</h2>
+               <p>Lorem, ipsum dolor sit amet 
+                sectetur adipisicing elit. Un
+                elaudantium. Molestiae, numquam nesciunt!</p>
+                
+        </div>
+    </div>
+</section>
+
+<div class="big-container-footer">
+<div id="contact" class="small-container">
+    <div class="row">
+        <div class="col-5">
+            <h2>ENJOY</h2>
+            <p>We create possibilities <br> for the 
+            connected world. 
+            Be Bold.</p>
+            <div class="icons">
+                <img src="./assets/icons/linkedin.png" alt="">
+                
+            </div>
+        </div>
+        <div class="col-5">
+            <nav>
+                <ul>
+                    <h5>your text</h5>
+                    <li>your text</li>
+                    <li>your text</li>
+                    <li>your text</li>
+                    <li>your text</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-5">
+            <nav>
+                <ul>
+                    <h5>your text</h5>
+                    <li>your text</li>
+                    <li>your text</li>
+                    <li>your text</li>
+                    <li>your text</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-5">
+            <h3>Do you have any questions ?</h3>
+           <br>
+            <form action="">
+                <input placeholder="Email" type="text">
+                <textarea placeholder="Type your message." name="" id=""></textarea>
+                <button>Send</button>
+             </form>
+        </div>
+      
+    </div>
+</div>        
+</div>
+    
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+}
+section{
+    padding: 100px;
+}
+
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: url('./assets/images/1.png');
+    background-size: cover;
+    background-position:right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2{
+    font-size-adjust: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.banner h3{
+    font-size-adjust: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+.btn{
+    position: relative;
+    background:#2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top:20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px ;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* transition:0.5s; */
+}
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header .logo{
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    animation: animatia 1s infinite alternate;
+}
+
+
+
+
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+header.sticky ul li a{
+    color: black;
+}
+
+
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+.content
+{
+    display: flex;
+    justify-content: space-between;
+}
+.contentBx{
+    padding-right: 30px;
+}
+
+.contentBx h3
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.w50
+{
+    min-width: 50%;
+}
+img{
+    max-width: 100%;
+}
+
+.services{
+    background: #111;
+}
+.heading.white{
+    color: blanchedalmond;
+}
+.services .content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .servicesBx{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+    /* transition: 0.5s; */
+}
+.services .content .servicesBx:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.p p {
+    color: #fff;
+    position: absolute;
+    bottom: 580px;
+    left: 280px;
+    font-size: 20px;
+    animation:animate2 1s linear infinite;
+    transition: 0.5s;
+}
+
+
+
+.formBx form input[type="submit"]
+{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+}
+
+/*Responsive*/
+@media (max-width:992px){
+    header,
+    header.sticky
+    {
+        padding: 20px 50px;
+        z-index: 1000;
+
+    }
+    .menu{
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background:#fff;
+        transition: 0.5s;
+        border-top: 1px solid rgba(0,0,0,0.2);      
+    }
+    .menu.active{
+        left: 0;
+    }
+
+
+
+    header ul li a {
+        color: black;
+        margin: 10px;
+        font-size: 24px;
+}
+.toggle
+{
+    width: 40px;
+    height: 40px;
+    background:url(./assets/icons/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+    
+}
+.toggle.active{
+    height: 30px;
+    background-color: red;
+    width: 30px;
+    background:url(./assets/icons/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+ }
+   /* header.sticky .toggle {
+       filter: invert(1);
+   } */
+   section {
+       padding: 100px 20px;
+   }
+   .banner
+   {
+    padding: 150px 50px 100px ;
+   }
+   .banner h2 {
+       font-size: 1.1em;
+   }
+   .banner h3 {
+    font-size: 1em;
+  }
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2 {
+        font-size: 24px;
+    }
+    .contentBx h3
+    {
+       font-size: 20px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .w50{
+        margin-bottom: 20px;
+    }
+    .services .content .servicesBx{
+        margin:10px;
+    }
+      .contact .heading.white {
+       display: flex;
+    }
+
+    
+}
+
+
+.formBx{
+    min-width: 80%;
+    bottom: 70px;
+    left: 500px;
+    background-color: #222;
+    position: static;
+}
+.formBx form {
+    display: flex;
+    flex-direction: column;
+}
+.formBx h3 {
+    color: #fff;
+    margin-left: 150px;
+}
+.formBx form input,
+.formBx form textarea
+{
+    margin-bottom: 5px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #111;
+    resize: none;
+    width: 50%;
+}
+.formBx form textarea {
+    min-height: 200px;
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder
+{
+    color: #999;
+}
+
+.formBx p{
+    margin-top: 60px;
+    position: absolute;
+    color: #fff;
+    font-size: 23px;
+    display: flex;
+}
+
+
+
+/* footer */
+
+
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col-5{
+    padding: 10px;
+
+} 
+.small-container .col-5 h5{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.col-5 h2{
+    text-align: center;
+    color: white;
+}
+.col-5 p{
+    text-align: center;
+    color: #9b9b9b;
+}
+.col-5 nav ul li {
+    color: #9b9b9b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-5 nav ul h5 {
+    color: white;
+}
+
+.big-container-footer{
+    background-color: #000000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.small-container .col-5:last-child{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.small-container .col-5:last-child form input {
+    width: 220px;
+    height: 30px;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+    padding-left: 3px;
+
+
+}
+.small-container .col-5:last-child form textarea{
+    display: block;
+    margin-top: 5px;
+    width: 220px;
+    height: 60px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    padding-left: 3px;
+}
+.small-container .col-5:last-child form button{
+    display: inline-block;
+    width: 120px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    margin-top: 7px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.big-container-footer .icons{
+   width: 300px;
+   height: 50px;
+
+   margin-top: 10px;
+}
+.big-container-footer .icons img{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width:472px) {
+    .small-container{
+        max-width: 300px;
+    }
+    .small-container .col-5:last-child form{
+        margin: auto;
+    }
+}
